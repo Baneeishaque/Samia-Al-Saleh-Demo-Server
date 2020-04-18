@@ -1,27 +1,32 @@
 <?php  
-$emailErr= $mobileErr= "";
-if(isset($_POST['submit'])){
-	if ($_SERVER["REQUEST_METHOD"] == "POST"){
-		 if(empty($_POST['email'])){
-			 $emailErr= "email is required";
-		 }else{
-			if(!filter_var($email, FILTER_VALIDATE-EMAIL)){
-				$emailErr ="invalid email format";
-			 }
-		 }
-		 if(empty($_POST['mobile'])){
-			 $mobileErr= "mobile is required";
-		 }
-		
-		}
- $email=$_POST['email'];
- $mobile=$_POST['mobile'];
-$check = "SELECT email FROM client WHERE email = '$email' And mobile='$mobile'"; 
-$res=mysqli_query($dbconn,$check);
-	if(mysqli_num_rows($res)==1){
-		echo " <p>succcess..user found, New password send to Registered Mobile number</p>";
-		header('location:login.php');
-		
+
+
+
+ if(empty($_POST['email'])){
+	echo "email is required";
+ }
+ else
+ {
+ if(!filter_var($email, FILTER_VALIDATE-EMAIL)){
+	echo ="invalid email format";
+ }
+ }
+ else
+ {
+	if(empty($_POST['mobile'])){
+	 echo "mobile is required";
 	}
-}
+ else
+	{
+		$validnum=filter_var($_POST['mobile'],FILTER_SANITIZE_NUMBER_INT);
+		$validnum=str_replace("-","",$validnum);
+		if(strlen($validnum)<10 || strlen($validnum)>14){
+			echo "invalid mobile number"
+		}
+	}
+ else
+ {
+	echo " <p>succcess..user found, New password send to Registered Mobile number</p>";
+ }	
+
 ?>

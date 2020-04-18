@@ -1,26 +1,25 @@
 <?php
-$emailErr= $passcodeErr= "";
-if (isset($_POST['signup'])){
-	if ($_SERVER["REQUEST_METHOD"] == "POST"){
+
 		
-	
-		 if(empty($_POST['email'])){
-			$emailErr= "email is required";
-		 }else{
-			  if(!filter_var($email, FILTER_VALIDATE-EMAIL)){
-				$emailErr ="invalid email format"
-			 }
+
+	 if(empty($_POST['email'])){
+		echo "email is required";
+	 }else{
+		  if(!filter_var($email, FILTER_VALIDATE-EMAIL)){
+			echo"invalid email format"
 		 }
-		  if(empty($_POST['passcode'])){
+	 }else{
+			 if(empty($_POST['passcode'])){
 			$passcodeErr "passcode is required";
-		 }
-	}	
+			}
+	 }else{
+		 echo "SignUp successfull";
+	 }
+		  
+	
 
 
 	
-	$email=$_POST['email'];
-	$passcode=$_POST['passcode'];
-	mysqli_query($dbconn,"INSERT INTO client(`email`,`passcode`) VALUES('$email','$passcode');");
-}
+	
 
 ?>
