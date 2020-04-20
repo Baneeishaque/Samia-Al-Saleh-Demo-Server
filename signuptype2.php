@@ -10,7 +10,7 @@
 		 }
 	 }else{
 			 if(empty($_POST['passcode'])){
-			$passcodeErr "passcode is required";
+			echo "passcode is required";
 			}
 	 }else{
 		 echo "SignUp successfull";
