@@ -1,6 +1,9 @@
-<!--11-->
+<!-- 11.1 -->
 <?php
-//TODO : Check for GET Variables
-//$_GET['userid'];
-echo "cart data";
-
+if(empty($_GET['userid'])){
+    echo "didn't get user";
+}else {
+    echo "cart data of user";    
+}
+ 
+?>
