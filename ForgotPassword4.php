@@ -14,7 +14,7 @@ if(empty($_POST['email'])){
 		    if(strlen($validnum)<10 || strlen($validnum)>14){
 					echo "invalid mobile number";
 			} else {
-				echo " <p>succcess your old password is 100456</p>";
+				echo " <p>success your old password is 100456</p>";
 				
 			}
 		}

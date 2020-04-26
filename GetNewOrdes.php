@@ -1,5 +1,5 @@
 <!-- ADMIN 7.1 -->
 <?php
 
-  echo"new ordes";
+  echo"new orders";
 ?>

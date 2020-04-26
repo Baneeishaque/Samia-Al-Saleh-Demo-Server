@@ -16,7 +16,7 @@
 			   echo "passcode is required";
 	    } else {
 
-		  echo "SignUp successfull";
+		  echo "SignUp success full";
 
 	 	}
 	} 

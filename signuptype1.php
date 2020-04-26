@@ -32,7 +32,7 @@ if (empty($_POST['name'])) {
 						if(empty($_POST['passcode'])){
 							echo "passcode is required";
 						}else{
-							echo "SignUp successfull ";
+							echo "SignUp success full ";
 						}
 					}
 				}

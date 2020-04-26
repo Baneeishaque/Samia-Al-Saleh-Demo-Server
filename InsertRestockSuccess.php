@@ -4,6 +4,6 @@
 if(empty($_POST['restock'])){
     echo"didn't get anything";
 }else{
-    echo"sucess..added restock product";
+    echo"success..added restock product";
 } 	
 ?>

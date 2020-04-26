@@ -2,14 +2,14 @@
 <?php
 if (empty($_POST['username'])) {
 
-		 echo "username souldn't be empty";
+		 echo "username shouldn't be empty";
 } else {
 	 if (empty($_POST['password'])) {
 
-		   $passwordErr= "password is missimg";
+		   $passwordErr= "password is missing";
 			
 		} else {
-		   echo "signin failed";
+		   echo "sign in failed";
 		}
 	}	
 ?>

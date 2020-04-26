@@ -3,7 +3,7 @@
 if(empty($_POST['suspendsalebuyers'])){
     echo"didn't get anything";
 }else{
-    echo"succes...request sended successfully";
+    echo"success...request send successfully";
 
 }
  

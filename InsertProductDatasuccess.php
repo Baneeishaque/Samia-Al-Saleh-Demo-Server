@@ -4,7 +4,7 @@
 if(empty($_POST['productdata'])){
     echo "didn't get product data";
 }else{
-    echo "success..product data sended to inventory table";
+    echo "success..product data send to inventory table";
 }
 
 ?>

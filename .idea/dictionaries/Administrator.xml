@@ -1,8 +1,29 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Administrator">
     <words>
+      <w>cartdata</w>
       <w>cartentry</w>
+      <w>datas</w>
+      <w>deletesalebuyers</w>
+      <w>demoimage</w>
+      <w>demoimages</w>
+      <w>norrmal</w>
+      <w>occured</w>
+      <w>passcode</w>
+      <w>paymentdata</w>
+      <w>productcategory</w>
+      <w>productdata</w>
+      <w>productimages</w>
+      <w>productvideos</w>
+      <w>promocode</w>
+      <w>sideview</w>
+      <w>stockinfo</w>
+      <w>stockstatus</w>
+      <w>suspendsalebuyers</w>
+      <w>updatedsalebuyers</w>
+      <w>userdetail</w>
       <w>userid</w>
+      <w>validnum</w>
     </words>
   </dictionary>
 </component>

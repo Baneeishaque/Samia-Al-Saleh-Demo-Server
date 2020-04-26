@@ -3,12 +3,12 @@
 
 if (empty($_POST['username'])) {
 
-	echo "username souldn't be empty";
+	echo "username shouldn't be empty";
 } else {
 	if(empty($_POST['password'])){
-		echo "password is missimg";
+		echo "password is missing";
 	} else {
-		echo 'signin success';
+		echo 'sign in success';
 	}
 }
 
