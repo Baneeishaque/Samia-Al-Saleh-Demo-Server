@@ -12,9 +12,7 @@ if(empty($_POST['cartdata'])){
 			echo "didn't get user detais";
 			
 		} else{
-				$_POST['cartdata'];
-				$_POST['paymentdata'];
-				$_POST['userdetail'];
+			
 		  		echo "Error...failed to process request"; 
 		}
 	}

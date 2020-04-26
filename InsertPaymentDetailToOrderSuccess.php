@@ -16,9 +16,7 @@ if (empty($_POST['cartdata'])) {
 			echo "didn't get user detais";
 			
 		} else{
-				$_POST['cartdata'];
-				$_POST['paymentdata'];
-				$_POST['userdetail'];
+			
 				
 		  		echo "Success....purchase confirmation message send to registred mobile number"; 
 		}
