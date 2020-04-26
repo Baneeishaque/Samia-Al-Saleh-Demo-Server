@@ -1,44 +1,26 @@
 <!-- 10.3.1.2 -->
-<?php	
-if(empty($_POST['name'])){
+<?php
+if (empty($_POST['cartdata'])) {
 
-		 echo "name is required";
+		 echo "didn't get cart data";
+
 } else {
 
-	if(empty($_POST['address'])){
+	if (empty($_POST['paymentdata'])) {
 
-			echo "address is required";
-			
+			echo "didn't get payment data";
+		
 	} else {
+		if (empty($_POST['userdetail'])) {
 
-	 	if(empty($_POST['email'])){
-
-			echo "email is required";
-
-		} else {
-
-			if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-				echo "invalid email format";
-			} else {
-
-			   if(empty($_POST['mobile'])){
-			 		echo "mobile is required";
-		    	} else {
-
-					$validnum=filter_var($_POST['mobile'],FILTER_SANITIZE_NUMBER_INT);
-					$validnum=str_replace("-","",$validnum);
-					if(strlen($validnum)<10 || strlen($validnum)>14){
-						echo "invalid mobile number";
-					
-					} else {
-			 			$_GET['cartdata'];
-						$_GET['paymentdata'];
-						$_GET['userdetail'];
-		  				echo "success purchase Confirmation Message send to registered email"; 
-					
-					}
-				}
-			}
+			echo "didn't get user detais";
+			
+		} else{
+				$_POST['cartdata'];
+				$_POST['paymentdata'];
+				$_POST['userdetail'];
+				
+		  		echo "Success....purchase confirmation message send to registred mobile number"; 
 		}
 	}
 }
