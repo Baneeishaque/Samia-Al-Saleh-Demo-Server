@@ -13,12 +13,12 @@ if (empty($_POST['cartdata'])) {
 	} else {
 		if (empty($_POST['userdetail'])) {
 
-			echo "didn't get user detais";
+			echo "didn't get user details";
 			
 		} else{
 			
 				
-		  		echo "Success....purchase confirmation message send to registred mobile number"; 
+		  		echo "Success....purchase confirmation message send to registered mobile number";
 		}
 	}
 }
