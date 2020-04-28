@@ -3,6 +3,5 @@
 if(($_GET['order id'])){
     echo "order id is required";
 } else {
-
-}
     echo "sign in failed";
+}
